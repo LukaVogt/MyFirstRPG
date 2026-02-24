@@ -29,6 +29,36 @@
             // Status
             bool isAlive = true;
 
+            // Display Profile
+            Console.WriteLine("Name: " +  name);
+            Console.WriteLine("Race: " + race);
+            Console.WriteLine("Class: " + characterClass);
+            Console.WriteLine("Background: " + background);
+
+            Console.WriteLine();
+
+            // Display Attributes
+            Console.WriteLine("Strength: " + strength);
+            Console.WriteLine("Dexterity: " + dexterity);
+            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Level: " + level);
+            Console.WriteLine("Armorclass: " + armorClass);
+
+            // Display Skills
+            Console.WriteLine("athletics: " + "+" + athletics);
+            Console.WriteLine("Survival: " + "+" + survival);
+
+            Console.WriteLine();
+
+            //Display Equipment
+            Console.WriteLine("Weapon: "  + mainWeapon);
+            Console.WriteLine("Damage: " + weaponDamage);
+            Console.WriteLine("Gold: " + gold);
+
+
+
+
+
 
 
 
