@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+
             // Character Profile
             string name = "Grimm";
             string race = "Half-Orc";
@@ -25,6 +26,10 @@
             string mainWeapon = "Combataxe";
             int weaponDamage = 9;
             int gold = 10;
+
+            // Dice
+            Random d20 = new Random();
+            
 
             // Status
             bool isAlive = true;
@@ -55,11 +60,28 @@
             Console.WriteLine("Damage: " + weaponDamage);
             Console.WriteLine("Gold: " + gold);
 
+            Console.WriteLine();
+            Console.WriteLine("Gamestart");
+            Console.WriteLine();
 
+            // Start
+            Console.WriteLine("Grimm is standing in a mud pit and is looking for a tail");
+            int survivalthrow = d20.Next(1, 21) + survival;
+            Console.WriteLine("Survivalthrow");
+            Console.WriteLine("You need a 14");
+            Console.WriteLine("You got a " + survivalthrow);
+            
+            if(survivalthrow >= 14)
+            {
+                Console.WriteLine("Succeed! The trail goes to the east.");
 
+            }else
+            {
+                Console.WriteLine("Fail! Grimm just looks at an old rock");
+            }
+            
 
-
-
+            
 
 
 
