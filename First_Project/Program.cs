@@ -102,14 +102,25 @@
 
                 if (strengthThrow >= goblinArmorClass) {
                     Console.WriteLine("Succeed!");
-                    Console.WriteLine("You land a brutal shot and the goblin now bleeding from its side");
+                    Console.WriteLine("You land a brutal shot and the goblin is now bleeding from its side");
                      goblinHealth = goblinHealth - weaponDamage;
-                    Console.WriteLine("The Goblin has " + goblinHealth + "left");
+                    Console.WriteLine("The Goblin has " + goblinHealth + " hp" + " left");
 
                 }else
                 {
                     Console.WriteLine("Fail!");
                     Console.WriteLine("It doges and you miss by inches and are now open for a counter");
+                    int goblinThrow = d20.Next(1, 21) + goblinStrength;
+
+                    if (goblinThrow >= armorClass)
+                    {
+                        Console.WriteLine("Ouch! The Goblin smashed your shoulderplate an gave you a deep cut ");
+                        health = health - goblinDamage;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ha! Its sword just bounced off your armor");
+                    }
                 }
 
 
